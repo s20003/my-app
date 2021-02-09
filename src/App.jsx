@@ -24,13 +24,16 @@ class App extends React.Component {
     const { items, isLoaded } = this.state
     console.log(items)
     if (!isLoaded) {
-      return <div>...Loading</div>
+      return <h3>...Loading</h3>
     } else {
       return (
         <div>
+          <h4>ISS POSISHON</h4>
           <ul>
             {Object.keys(items).map(key => (
-              <li key={key}>{key} - {items[key]}</li>
+              <li key={key}>
+                {key} - {items[key]}
+              </li>
             ))}
           </ul>
         </div>
