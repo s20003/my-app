@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
-import Paper from '@material-ui/core/Paper'
+import { Paper, Button } from '@material-ui/core/'
 
-class App extends React.Component {
+class myApp extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -31,7 +31,7 @@ class App extends React.Component {
       return (
         <div>
           <Paper elevation={9}>
-            <h4>ISS POSISHON</h4>
+            <h3 className='title'>ISS POSISHON</h3>
             <ul>
               {Object.keys(items).map(key => (
                 <li key={key}>
@@ -39,6 +39,14 @@ class App extends React.Component {
                 </li>
               ))}
             </ul>
+            <Button
+              variant='contained'
+              color='primary'
+              onClick={loadPage}
+              disableElevation
+            >
+              update
+            </Button>
           </Paper>
         </div>
       )
@@ -46,4 +54,8 @@ class App extends React.Component {
   }
 }
 
-export default App
+const loadPage = props => {
+  return window.location.reload(false)
+}
+
+export default myApp

@@ -1,7 +1,6 @@
-h4
-{
+.title {
     text-align: center;
-    padding-left: 30px;
+    padding-left: 35px;
 }
 ul {
     list-style: none;
