@@ -6,3 +6,8 @@ ul {
     list-style: none;
     text-align: center;
 }
+img {
+    height: 158px;
+    width: 280px;
+    margin-left: 90px;
+}
