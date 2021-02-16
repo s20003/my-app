@@ -35,7 +35,7 @@ class myApp extends React.Component {
             <ul>
               {Object.keys(items).map(key => (
                 <li key={key}>
-                  {key} - {items[key]}
+                  {key} : {items[key]}
                 </li>
               ))}
             </ul>
