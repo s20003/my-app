@@ -31,7 +31,7 @@ class myApp extends React.Component {
       return (
         <div>
           <Paper elevation={9}>
-            <h3 className='title'>ISS POSISHON</h3>
+            <h2 className='title'>ISS POSITION</h2>
             <ul>
               {Object.keys(items).map(key => (
                 <li key={key}>
